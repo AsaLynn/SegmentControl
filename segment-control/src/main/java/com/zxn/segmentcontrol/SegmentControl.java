@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * Updated by zxn on 2019/7/6.
  */
-public class SegmentControl extends View {
+public class SegmentControl<T extends ISegmentInfo> extends View {
 
     private String[] mTexts;
     private Rect[] mCacheBounds;
@@ -187,7 +187,7 @@ public class SegmentControl extends View {
         }
     }
 
-    public void setNewData(List<ISegmentInfo> segmentInfoList) {
+    public void setNewData(List<T> segmentInfoList) {
         if (segmentInfoList != null && !segmentInfoList.isEmpty()) {
             mTexts = new String[segmentInfoList.size()];
             for (int i = 0; i < segmentInfoList.size(); i++) {
