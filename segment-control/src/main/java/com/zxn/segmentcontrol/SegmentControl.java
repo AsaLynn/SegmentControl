@@ -187,7 +187,7 @@ public class SegmentControl extends View {
         }
     }
 
-    public void setSegmentInfo(List<ISegmentInfo> segmentInfoList) {
+    public void setNewData(List<ISegmentInfo> segmentInfoList) {
         if (segmentInfoList != null && !segmentInfoList.isEmpty()) {
             mTexts = new String[segmentInfoList.size()];
             for (int i = 0; i < segmentInfoList.size(); i++) {

@@ -3,8 +3,6 @@ package com.zxn.segmentcontrol.sample;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.zxn.segmentcontrol.ISegmentInfo;
@@ -61,7 +59,7 @@ public class MainActivity extends Activity {
             segmentInfoList.add(foodInfo);
         }
 
-        sc_vertical.setSegmentInfo(segmentInfoList);
+        sc_vertical.setNewData(segmentInfoList);
         sc_vertical.setSelectedIndex(0);
     }
 }
