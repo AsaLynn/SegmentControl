@@ -4,7 +4,7 @@
 ### 中文
 
 # a simple SegmentControl Widget
-![art2](arts/arts3.gif)
+![art3](arts/arts3.gif)
 ![art2](arts/arts2.gif)
 ![art1](arts/arts1.gif)
 
