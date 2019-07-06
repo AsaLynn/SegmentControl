@@ -1,14 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.compileSdkVersion
+//    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.sevenheaven.segmentcontrol.sample"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode rootProject.ext.versionCode
-        versionName rootProject.ext.versionName
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
     }
     //noinspection GroovyAssignabilityCheck
     buildTypes {
@@ -21,6 +22,6 @@ android {
 
 //noinspection GroovyAssignabilityCheck
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':segment-control')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':segment-control')
 }

@@ -11,9 +11,9 @@ buildscript {
     }
     //noinspection GroovyAssignabilityCheck
     dependencies {
-classpath 'com.android.tools.build:gradle:3.3.1'
-classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
-classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
     }
 }
 
@@ -28,23 +28,23 @@ allprojects {
     }
 }
 
-ext{
-    compileSdkVersion = 28
-//    buildToolsVersion = "25.0.0"
+//ext {
+//    compileSdkVersion = 28
+////    buildToolsVersion = "25.0.0"
+//
+//    minSdkVersion = 8
+//    targetSdkVersion = 28
+//    versionCode = 1
+//    versionName = "1.0.0"
 
-    minSdkVersion = 8
-    targetSdkVersion = 28
-    versionCode = 1
-    versionName = "1.0.0"
-
-    pomPackaging = "aar"
-    pomName = "SHSegmentControl"
-    pomLicenseName = "The Apache Software License, Version 2.0"
-    pomLicenseShort = "Apache-2.0"
-    pomLicenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
-
-    pomSiteUrl = "https://github.com/7heaven/SHSegmentControl"
-    pomGitUrl = "https://github.com/7heaven/SHSegmentControl.git"
-
-    pomGroup = "com.7heaven.widgets"
-}
+//    pomPackaging = "aar"
+//    pomName = "SHSegmentControl"
+//    pomLicenseName = "The Apache Software License, Version 2.0"
+//    pomLicenseShort = "Apache-2.0"
+//    pomLicenseUrl = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+//
+//    pomSiteUrl = "https://github.com/zhang721688/SegmentControl"
+//    pomGitUrl = "https://github.com/zhang721688/SegmentControl.git"
+//
+//    pomGroup = "com.7heaven.widgets"
+//}
