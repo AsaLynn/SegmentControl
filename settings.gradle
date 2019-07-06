@@ -1,1 +1,1 @@
-include ':segment-control', ':example'
+include ':example', ':segment-control'

@@ -23,5 +23,5 @@ android {
 //noinspection GroovyAssignabilityCheck
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(':segment-control')
+    implementation project(path: ':segment-control')
 }
