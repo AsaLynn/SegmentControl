@@ -17,7 +17,7 @@ import android.view.ViewConfiguration;
 import java.util.List;
 
 /**
- * Created by 7heaven on 15/4/22.
+ * Updated by zxn on 2019/7/6.
  */
 public class SegmentControl extends View {
 
