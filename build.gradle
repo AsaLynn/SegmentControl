@@ -2,12 +2,8 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
-        mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
     //noinspection GroovyAssignabilityCheck
     dependencies {
@@ -19,14 +15,15 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
-        mavenCentral()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
     }
 }
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
 
 //ext {
 //    compileSdkVersion = 28
