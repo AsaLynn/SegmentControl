@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <com.zxn.segmentcontrol.SegmentControl
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textSize="13sp"
+        app:cornerRadius="5dip"
+        app:horizonGap="8dip"
+        app:normalColor="#FFFFFF"
+        app:selectedColor="#0099CC"
+        app:texts="啊啊|啦啦啦|哈哈哈|顶顶顶顶"
+        app:verticalGap="8dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.zxn.segmentcontrol.SegmentControl
+            android:id="@+id/segment_control2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:textSize="18sp"
+            app:backgroundColors="@color/background_color"
+            app:boundWidth="5dp"
+            app:cornerRadius="5dp"
+            app:horizonGap="10dp"
+            app:normalColor="#FFFFFF"
+            app:selectedColor="#0099CC"
+            app:separatorWidth="1dp"
+            app:textColors="@color/text_color"
+            app:texts="aa|bb|cc"
+            app:verticalGap="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.zxn.segmentcontrol.SegmentControl
+                android:id="@+id/sc_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="14sp"
+                app:backgroundColors="@color/bg_color_sc_region"
+                app:boundWidth="0dp"
+                app:cornerRadius="0dp"
+                app:selectedDrawable="@drawable/bg_rb_d_single_checked"
+                app:separatorWidth="0dp"
+                app:textColors="@color/text_color_sc_rgion"
+                app:verticalGap="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--
+     android:background="#FFFFFF"
+    app:backgroundColors="@color/bg_color_sc_region"
+    app:texts="富贵厅|吉祥厅|状元厅|安宁厅|双喜厅|状元厅"
+    -->
+
